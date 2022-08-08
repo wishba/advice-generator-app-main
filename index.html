@@ -24,15 +24,14 @@
 </head>
 
 <body>
-
-  Advice #
-  <!-- Advice ID goes here -->
-
-  "
-  <!-- Advice text goes here -->"
-
-  <div id="adviceId"></div>
-  <div id="advice"></div>
+  <p> Advice # <span id="adviceId"></span> </p>
+  <p id="advice"></p>
+  <div>
+    <img src="images/pattern-divider-mobile.svg" alt="">
+  </div>
+  <button>
+    <img src="images/icon-dice.svg" alt="random advice">
+  </button>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
@@ -40,7 +39,6 @@
   </div>
 
   <script>
-
     fetch('https://api.adviceslip.com/advice')
       .then((response) => response.json())
       .then((data) => {
@@ -50,7 +48,6 @@
         document.getElementById('adviceId').innerHTML = JSON.stringify(data.slip.id);
         document.getElementById('advice').innerHTML = JSON.stringify(data.slip.advice)
       });
-
   </script>
 </body>
 
