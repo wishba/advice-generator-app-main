@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+/* ## Colors
+
+### Primary
+
+v - Light Cyan: hsl(193, 38%, 86%)
+v - Neon Green: hsl(150, 100%, 66%)
+
+### Neutral
+
+- Grayish Blue: hsl(217, 19%, 38%)
+v - Dark Grayish Blue: hsl(217, 19%, 24%)
+v - Dark Blue: hsl(218, 23%, 16%) */
+
+:root {
+  --clr-bodybg: hsl(218, 23%, 16%);
+  --clr-advicebg: hsl(217, 19%, 24%);
+  --clr-adviceh: hsl(150, 100%, 66%);
+  --clr-advice: hsl(193, 38%, 86%);
+}
+
+body {
+  background-color: var(--clr-bodybg);
+}
+
+p {
+  font-family: 'Manrope', sans-serif;
+}
+
+.advice__container {
+  background-color: var(--clr-advicebg);
+  text-align: center;
+}
+
+.advice__header {
+  color: var(--clr-adviceh);
+}
+
+.advice--id {
+  padding-left: .5em;
+}
+
+.advice__quote {
+  font-size: 28px;
+  color: var(--clr-advice);
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
