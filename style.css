@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
-/* ## Colors
-
-### Primary
-
-v - Light Cyan: hsl(193, 38%, 86%)
-v - Neon Green: hsl(150, 100%, 66%)
-
-### Neutral
-
-- Grayish Blue: hsl(217, 19%, 38%)
-v - Dark Grayish Blue: hsl(217, 19%, 24%)
-v - Dark Blue: hsl(218, 23%, 16%) */
-
 :root {
   --clr-bodybg: hsl(218, 23%, 16%);
   --clr-advicebg: hsl(217, 19%, 24%);
