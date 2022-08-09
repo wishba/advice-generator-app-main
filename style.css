@@ -34,7 +34,7 @@ p {
   border-radius: 10px;
   padding: 1rem 1rem 0;
 
-  max-width: 20rem;
+  min-width: 20rem;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -54,6 +54,11 @@ p {
   color: var(--clr-advice);
 }
 
+.advice__footer {
+  content: url(images/pattern-divider-mobile.svg);
+  margin: auto;
+}
+
 .dice__button {
   border-radius: 50%;
   height: 50px;
@@ -69,7 +74,6 @@ p {
   margin: auto;
 }
 
-/* footer */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -77,4 +81,10 @@ p {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 500px) {
+  .advice__footer {
+    content: url(images/pattern-divider-desktop.svg);
+  }
 }
