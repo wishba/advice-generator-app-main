@@ -69,6 +69,10 @@ p {
   transform: translateY(50%);
 }
 
+.dice__button:hover {
+  box-shadow: 0 0 4rem var(--clr-adviceh), 0 0 2rem var(--clr-adviceh);
+}
+
 .dice__icon {
   display: grid;
   margin: auto;
