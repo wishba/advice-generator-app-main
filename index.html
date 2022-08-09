@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="getAdvice()">
   <div class="advice__container">
     <p class="advice__header"> Advice
       <span class="advice--id">#</span>
@@ -17,7 +17,7 @@
     </p>
     <p class="advice__quote" id="advice"></p>
     <div class="advice__footer"> </div>
-    <button class="dice__button">
+    <button class="dice__button" onclick="getAdvice()">
       <img class="dice__icon" src="images/icon-dice.svg" alt="random advice">
     </button>
   </div>
@@ -28,15 +28,17 @@
   </div>
 
   <script>
-    fetch('https://api.adviceslip.com/advice')
-      .then((response) => response.json())
-      .then((data) => {
-        // console.log(data);
-        // console.log(data.slip.id);
-        // console.log(data.slip.advice);
-        document.getElementById('adviceId').innerHTML = JSON.stringify(data.slip.id);
-        document.getElementById('advice').innerHTML = JSON.stringify(data.slip.advice)
-      });
+    function getAdvice() {
+      fetch('https://api.adviceslip.com/advice')
+        .then((response) => response.json())
+        .then((data) => {
+          // console.log(data);
+          // console.log(data.slip.id);
+          // console.log(data.slip.advice);
+          document.getElementById('adviceId').innerHTML = JSON.stringify(data.slip.id);
+          document.getElementById('advice').innerHTML = JSON.stringify(data.slip.advice)
+        });
+    }
   </script>
 </body>
 
