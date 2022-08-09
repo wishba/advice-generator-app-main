@@ -77,10 +77,16 @@ p {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--clr-advice);
+
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--clr-adviceh);
 }
 
 @media screen and (min-width: 500px) {
