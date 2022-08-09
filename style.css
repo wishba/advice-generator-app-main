@@ -31,12 +31,14 @@ p {
 .advice__container {
   background-color: var(--clr-advicebg);
   text-align: center;
+  border-radius: 10px;
+  padding: 1rem;
 
   max-width: 20rem;
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateY(-50%) translateX(-50%);
 }
 
 .advice__header {
@@ -44,12 +46,27 @@ p {
 }
 
 .advice--id {
-  padding-left: .5em;
+  padding-left: .5rem;
 }
 
 .advice__quote {
   font-size: 28px;
   color: var(--clr-advice);
+}
+
+.dice__button {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: var(--clr-adviceh);
+
+  transform: translateY(80%);
+}
+
+.dice__icon {
+  display: grid;
+  margin: auto;
 }
 
 /* footer */
