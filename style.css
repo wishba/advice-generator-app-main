@@ -84,6 +84,10 @@ p {
 }
 
 @media screen and (min-width: 500px) {
+  .advice__container {
+    max-width: 50rem;
+  }
+
   .advice__footer {
     content: url(images/pattern-divider-desktop.svg);
   }
